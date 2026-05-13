@@ -5,22 +5,22 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #f4f7fb;
-  color: #1f2937;
+  background: #0b0b0d;
+  color: #e5e7eb;
 }
 
 .topo {
-  background: linear-gradient(135deg, #0f172a, #1d4ed8);
+  background: linear-gradient(135deg, #050505, #151515, #1e293b);
   color: #ffffff;
 }
 
 .menu-principal {
-  background: #111827;
+  background: #080808;
 }
 
 .titulo-secao {
   font-weight: 700;
-  color: #0f172a;
+  color: #ffffff;
 }
 
 .imagem-carrossel {
@@ -28,6 +28,7 @@ body {
   object-fit: cover;
 }
 
+/* Cards das marcas alemãs */
 .card-galeria {
   background: #ffffff;
   border-radius: 18px;
@@ -39,9 +40,11 @@ body {
 
 .card-galeria img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  height: 150px;
+  object-fit: contain;
   display: block;
+  padding: 1rem;
+  background: #ffffff;
 }
 
 .card-galeria figcaption {
@@ -49,6 +52,7 @@ body {
   text-align: center;
   font-weight: 600;
   background: #ffffff;
+  color: #000000;
 }
 
 .card-galeria:hover {
@@ -58,20 +62,28 @@ body {
 
 .tabela-personalizada {
   background: #ffffff;
+  color: #000000;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
 .card-form {
   background: #ffffff;
+  color: #000000;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.card-form p,
+.card-form li,
+.card-form strong {
+  color: #000000;
 }
 
 .rodape {
-  background: #111827;
-  color: #ffffff;
+  background: #080808;
+  color: #9ca3af;
   margin-top: 40px;
 }
 
@@ -94,20 +106,42 @@ body {
   .imagem-carrossel {
     height: 280px;
   }
-
-.carousel-caption h5 {
-  text-shadow:
-    -1px -1px 0 #000,
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
 }
 
+.carousel-caption h5,
 .carousel-caption p {
   text-shadow:
-    -1px -1px 0 #000,
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black,
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
 }
+.card-form h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.card-form p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.banner-carros {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  .banner-carros {
+    height: 250px;
+  }
 }
