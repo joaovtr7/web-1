@@ -46,6 +46,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Tecnologia.html">Tecnologia</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contato.html">Contato</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -53,12 +56,79 @@
 
     <main class="container my-5">
 
-        <section class="mb-5">
-            <h2 class="titulo-secao mb-4">Engenharia Alemã em Destaque</h2>
+        <div id="carouselCarrosAlemaes" class="carousel slide" data-bs-ride="carousel">
 
-            <img src="img/carros-alemaes-banner.png"
-                alt="Carros alemães das marcas Volkswagen, BMW, Mercedes-Benz, Audi, Porsche e Opel"
-                class="img-fluid banner-carros">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselCarrosAlemaes" data-bs-slide-to="0"
+                    class="active"></button>
+
+                <button type="button" data-bs-target="#carouselCarrosAlemaes" data-bs-slide-to="1"></button>
+
+                <button type="button" data-bs-target="#carouselCarrosAlemaes" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="img/m3.webp" class="d-block w-100 imagem-carrossel" alt="BMW M3 E92">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="text-shadow: 2px 2px 4px black;">
+                            BMW M3 E92
+                        </h5>
+
+                        <p style="text-shadow: 2px 2px 4px black;">
+                            Famosa principalmente por ser a única geração da história da M3 equipada com motor V8 de
+                            fábrica.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/gti.avif" class="d-block w-100 imagem-carrossel" alt="Golf GTI MK7">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="text-shadow: 2px 2px 4px black;">
+                            Golf GTI MK7
+                        </h5>
+
+                        <p style="text-shadow: 2px 2px 4px black;">
+                            Famoso por ter inventado e dominado o conceito de hot hatch.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/rs3.jpg" class="d-block w-100 imagem-carrossel" alt="Audi RS3">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="text-shadow: 2px 2px 4px black;">
+                            Audi RS3
+                        </h5>
+
+                        <p style="text-shadow: 2px 2px 4px black;">
+                            Um dos esportivos compactos mais rápidos e potentes do mercado, combinando desempenho de
+                            supercarro com praticidade para o dia a dia.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCarrosAlemaes"
+                data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCarrosAlemaes"
+                data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
         </section>
 
         <section>
